@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script type="module" src="modules/ol-layerswitcher.js"></script> -->
+    <title>WebGIS Project</title>
+  </head>
+  <body>
+      <div id="map">
+      <div id="mouse-position"></div>
+      <label id="opacity">
+        Layer opacity
+        <input id="opacity-input" type="range" min="0" max="1" step="0.01" value="1" />
+        <span id="opacity-output"></span>
+      </label>
+      <form>
+        <label for="type">Measurement type &nbsp;</label>
+        <select id="type">
+          <option value="length">Length (LineString)</option>
+          <option value="area">Area (Polygon)</option>
+        </select>
+      </form>
+      <form class="form">
+        <label for="format">Page size </label>
+        <select id="format">
+          <option value="a0">A0 (slow)</option>
+          <option value="a1">A1</option>
+          <option value="a2">A2</option>
+          <option value="a3">A3</option>
+          <option value="a4" selected>A4</option>
+          <option value="a5">A5 (fast)</option>
+        </select>
+        <label for="resolution">Resolution </label>
+        <select id="resolution">
+          <option value="72">72 dpi (fast)</option>
+          <option value="150">150 dpi</option>
+          <option value="200" selected>200 dpi</option>
+          <option value="300">300 dpi (slow)</option>
+        </select>
+        <label for="scale">Scale </label>
+        <select id="scale">
+          <option value="500">1:500000</option>
+          <option value="250" selected>1:250000</option>
+          <option value="100">1:100000</option>
+          <option value="50">1:50000</option>
+          <option value="25">1:25000</option>
+          <option value="10">1:10000</option>
+        </select>
+      </form>
+      <button id="export-pdf">Export PDF</button>
+      </div>
+    <script type="module" src="./main.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+  </body>
+</html>
