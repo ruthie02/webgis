@@ -1,5 +1,6 @@
 import './style.css';
-// import './node_modules/ol-layerswitcher/src/ol-layerswitcher.css';
+import './node_modules/ol-layerswitcher/src/ol-layerswitcher.css';
+
 
 import LayerSwitcher from 'ol-layerswitcher';
 import colormap from 'colormap';
