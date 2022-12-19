@@ -1,18 +1,10 @@
-# OpenLayers + Vite
+# Open Source Web GIS Project
 
-This example demonstrates how the `ol` package can be used with [Vite](https://vitejs.dev/).
+This is the final output for the Open Source Web GIS project using OpenLayers, and OL-layerswitcher. 
 
-To get started, run the following (requires Node 14+):
+The project involves using OpenStreetMap and Stamen Dark for the base map, and Cloud Optimized Geotiff hosted in Amazon S3. True Color, NDVI, and NDWI were tiled on the map. 
 
-    npx create-ol-app my-app --template vite
+The user can create line and polygon measurements in the line area, and can export it as well to pdf. 
 
-Then change into your new `my-app` directory and start a development server (available at http://localhost:5173):
+Other modules used: colormap, proj4. 
 
-    cd my-app
-    npm start
-
-To generate a build ready for production:
-
-    npm run build
-
-Then deploy the contents of the `dist` directory to your server.  You can also run `npm run serve` to serve the results of the `dist` directory for preview.
