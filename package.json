@@ -1,12 +1,16 @@
 {
+  "homepage": "https://ruthie02.github.io/webgis/",
   "name": "webgis_proj",
   "version": "1.0.0",
   "scripts": {
     "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "serve": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "vite": "^3.0.9"
   },
   "dependencies": {
