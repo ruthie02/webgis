@@ -1,4 +1,5 @@
 @import "node_modules/ol/ol.css";
+@import "node_modules/ol-layerswitcher/src/ol-layerswitcher.css";
 
 html, body {
   margin: 0;
